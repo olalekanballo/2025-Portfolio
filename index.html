@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>"My Portfolio"</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Boxicons for social icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- AOS animation library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="ttg.css" />
+</head>
+
+<body>
+  <!-- Custom pointer -->
+  <div id="cursor"></div>
+
+  <!-- Page wrapper -->
+  <div class="page">
+
+    <!-- HERO / Intro -->
+    <header class="hero">
+      <div class="hero-inner" data-aos="fade-up" data-aos-duration="700">
+        <h1 class="intro-title">Welcome To My Portfolio</h1>
+        <p class="intro-sub">Elegant, performant UI — Web solution, deliver real business impact</p>
+        <a href="#cv-section">
+          <div class="hero-ctas">
+            <button id="cta-check" class="cta-btn" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+              Click here to check more about me
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <!-- Animated profile card -->
+      <aside class="profile-card" data-aos="fade-left" data-aos-duration="800">
+        <div class="pf-picture">
+          <!-- Replace src with your own photo -->
+          <img id="pf-img" src="Media/ttg.jpg" alt="Profile picture">
+        </div>
+        <div class="pf-name">The Tech Gee</div>
+      </aside>
+    </header>
+
+    <!-- CV Section -->
+    <section id="cv-section" class="cv-section" data-aos="fade-up">
+      <h2 class="section-title">Want to Know More?</h2>
+      <p class="cv-text">Check my CV for more details about my skills and experience.</p>
+      <a href="cv/Bello_Abdullahi_Olalekan_CV.pdf" target="_blank" class="cv-btn" id="cv-btn">Open My CV </a>
+    </section>
+
+
+    <section id="resume-section" class="resume-section" data-aos="fade-up">
+      <h2 class="resume-title">Unable to load my CV?</h2>
+      <p class="resume-text">Preview my Resume image below 👇</p>
+
+      <button id="resume-toggle-btn" class="resume-btn">Show My Resume</button>
+
+      <!-- Hidden Resume Preview -->
+      <div id="resume-preview-box" class="resume-preview" style="display: none;">
+        <img src="Media/my-resume-image.jpg" alt="Resume Preview">
+      </div>
+    </section>
+
+
+
+
+    <!-- Typewriter / Specialties -->
+    <section class="typewriter-section" data-aos="fade-up" data-aos-duration="500">
+      <div class="type-wrap white-card">
+        <div class="type-left">
+          <h3 class="small-title">I am</h3>
+          <div class="typewriter">
+            <span id="type-text"></span><span class="cursor">|</span>
+          </div>
+        </div>
+        <div class="type-right blue-box">
+          <p>Quick, creative and detail-oriented — crafting pixel-perfect UIs & delightful flows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section" data-aos="fade-up" data-aos-duration="500">
+      <div class="container">
+        <h2>About Me</h2>
+        <article class="about-grid">
+          <div class="about-card white-card">
+            <h4>Frontend Developer</h4>
+            <p>I am a frontend developer with 3 years of hands-on experience using HTML, CSS, JavaScript and Figma. I
+              practice component-driven design, accessibility-first flows, and responsive-first layouts. I enjoy
+              testing, debugging, and shipping performant UI.</p>
+            <ul class="meta-list">
+              <li>3 years front-end & UI/UX</li>
+              <li>Figma: UI/UX & product design</li>
+              <li>Tools: Git, Chrome DevTools, A11y testing</li>
+            </ul>
+          </div>
+
+          <div class="fun-facts blue-box">
+            <h4>Design Philosophy</h4>
+            <p>Clarity > Complexity. Micro-interactions matter. Design should guide decisions, reduce cognitive load and
+              make products feel trustworthy.</p>
+            <p class="muted">Available for freelance & collaborations.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section" data-aos="fade-up" data-aos-duration="500">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="muted">A collection of UI & front-end practice projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-aos="fade-left">
+      <h2 class="section-title">Projects Demo (Picture)</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="media/Screenshot 2025-09-20 042629.png" alt="Project 1">
+          <div class="project-info">
+            <h3> Web Website Template </h3>
+            <p>A mordern type of website template for your new new businesses</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="media/Screenshot 2025-09-20 031520.png" alt="Project 2">
+          <div class="project-info">
+            <h3>Entrepreneur Website</h3>
+            <p>An entrepreneur website (landing page) showcasing large various collection of perfumes</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="media/Screenshot 2025-09-20 040730.png" alt="Project 3">
+          <div class="project-info">
+            <h3>E-learning Website</h3>
+            <p>An e-Learning website with online design and development courses</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="media/phone1.png" alt="Project 4">
+          <div class="project-info">
+            <h3>A shortlet apartment website </h3>
+            <p>A welcome page of a shortlet apartment website designed using figma,aimed encouraging booking and
+              enhancing user experience</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="media/phone2.png" alt="Project 5">
+          <div class="project-info">
+            <h3>A shortlet apartment website </h3>
+            <p>User authentication page designed in figma.offers sign up,sign in and forgot password with an appropriate
+              layout </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="media/phone3.png" alt="Project 6">
+          <div class="project-info">
+            <h3>A shortlet apartment website </h3>
+            <p>Apartment listing page, all designed with figma showcasing shortlet apartment by location, date, and
+              guest filter, clean layout highlight images, prices and property details for easy booking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Video Projects Section -->
+    <section id="video-projects" class="video-projects-section" data-aos="fade-up">
+      <h2 class="section-title">Project Demos (Video)</h2>
+      <div class="video-cards">
+
+        <!-- Card 1 -->
+        <div class="video-card">
+          <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="Media/Untitled video - Made with Clipchamp (5).mp4" type="video/mp4">
+            </video>
+            <button class="video-btn">⏸</button>
+          </div>
+          <div class="video-info">
+            <h3>Web Website Template </h3>
+            <p>This project demonstrates a responsive landing page with smooth animations and UI/UX design focus.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="video-card">
+          <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="Media/Untitled video - Made with Clipchamp (6).mp4" type="video/mp4">
+            </video>
+            <button class="video-btn">⏸</button>
+          </div>
+          <div class="video-info">
+            <h3>Entrepreneur Website</h3>
+            <p>This showcases a JavaScript-based app that interacts and provides dynamic UI updates.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="video-card">
+          <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="Media/Video Project 11111.mp4" type="video/mp4">
+            </video>
+            <button class="video-btn">⏸</button>
+          </div>
+          <div class="video-info">
+            <h3>E-learning Website</h3>
+            <p>This highlight website well designed with appropriate user interface in a functional design demo.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>How can I contact you?</summary>
+            <p>Use the contact form below or reach out on social media. Links are below.</p>
+          </details>
+
+          <details>
+            <summary>Do you work with remote teams?</summary>
+            <p>Yes — I collaborate remotely. I'm comfortable with asynchronous tools and regular standups.</p>
+          </details>
+
+          <details>
+            <summary>Do you accept freelance projects?</summary>
+            <p>Yes — depending on scope. Contact me with project details and timeline.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="muted">Leave a message — it will be sent to me and i will reply ASAP</p>
+        <form id="contact-form" class="contact-grid" action="https://formspree.io/f/xwpngwbl" method="POST">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="cta-btn">Send message</button>
+            <div class="socials small">
+              <a href="https://x.com/TTG_TheTechGee/status/1967520252599931006" title="Twitter"><i
+                  class="bx bxl-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/ttg-tech-gee-48a90a270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://dribbble.com/ttg-thetechgee" title="Dribbble"><i class="bx bxl-dribbble"></i></a>
+              <a href="https://github.com/olalekanballo" title="Github"><i class="bx bxl-github"></i></a>
+              <a href="https://www.instagram.com/the_tech_gee?igsh=aXQwNzl5dmwwaTYx&utm_source=qr" title="instagram"><i
+                  class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+    <br>
+    <br>
+    <hr>
+
+    <!-- UI/UX Showcase Marquee -->
+    <section class="uiux-showcase">
+      <h2 class="showcase-title">Some Part of My UI/UX Projects</h2>
+      <div class="showcase-marquee">
+        <div class="showcase-track">
+          <img src="Media/post 1.png" alt="UI/UX project 1">
+          <img src="Media/post subject page.png" alt="UI/UX project 2">
+          <img src="Media/post schedule page.png" alt="UI/UX project 3">
+          <img src="Media/post2.png" alt="UI/UX project 4">
+          <img src="Media/post5.png" alt="UI/UX project 5">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Extra articles / resources -->
+    <section class="extras-section">
+      <div class="container">
+        <h3>Extras</h3>
+        <div class="extras-grid">
+          <article class="white-card">
+            <h4>Design Tokens</h4>
+            <p>Color, spacing, type scale and elevation tokens used throughout this portfolio.</p>
+          </article>
+
+          <article class="white-card">
+            <h4>Accessibility</h4>
+            <p>ARIA attributes, semantic tags and keyboard focus testing were included while building.</p>
+          </article>
+
+          <article class="white-card">
+            <h4>Performance</h4>
+            <p>Optimized animations, hardware-accelerated transforms and lazy content to avoid jank.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <hr>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>TTG-The Tech Gee</h4>
+          <p class="muted">Frontend Developer • UI/UX • Product Designer</p>
+        </div>
+
+        <div>
+          <h5>Quick Links</h5>
+          <ul class="link-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5>Contact</h5>
+          <p class="muted">Email: <a href="#">ttg.thetechgee@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <small>© <span id="year"></span> The Tech Gee — Built with care.</small>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- AOS + script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="ttg.js"></script>
+</body>
+
+</html>
