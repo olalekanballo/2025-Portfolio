@@ -269,7 +269,6 @@ body {
   margin: 24px 0;
 }
 .type-wrap {
-  display: flex;
   gap: 18px;
   align-items: center;
   justify-content: space-between;
