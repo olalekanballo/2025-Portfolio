@@ -315,6 +315,122 @@ body {
   margin: 6px 0;
 }
 
+
+
+
+
+
+
+
+/* ===== MY AIMS SECTION ===== */
+.aims-section {
+  padding: 90px 20px;
+}
+
+.aims-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Text */
+.aims-content {
+  flex: 1;
+}
+
+.aims-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.aims-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #cbd5e1;
+}
+
+.aims-text strong {
+  color: #ffffff;
+}
+
+.aims-text.highlight {
+  margin-top: 25px;
+}
+
+/* Skill Tags */
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin: 0 6px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.skill-tag i {
+  font-size: 1.1rem;
+}
+
+.skill-tag.ecommerce {
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+}
+
+.skill-tag.portfolio {
+  background: rgba(59,130,246,0.15);
+  color: #3b82f6;
+}
+
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .aims-wrapper {
+    flex-direction: column;
+  }
+
+  .aims-title {
+    font-size: 2.1rem;
+  }
+}
+
+
+
+
+
+
+.aims-video {
+  flex: 1;
+  position: relative;
+}
+
+.aims-video video {
+  width: 100%;
+  height: 600px;
+  border-radius: 36px;
+  will-change: transform;
+}
+
+/* Mobile optimization */
+@media (max-width: 900px) {
+  .aims-video {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
 /* projects grid */
 .projects-grid {
   display: grid;
