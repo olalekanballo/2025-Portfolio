@@ -1,10 +1,45 @@
 // ===== Initialize AOS =====
-AOS.init({
-  once: false,
-  duration: 700,
-  easing: 'ease-out-cubic',
-  anchorPlacement: 'top-bottom'
-});
+if (window.AOS) {
+  window.AOS.init({
+    once: false,
+    duration: 700,
+    easing: 'ease-out-cubic',
+    anchorPlacement: 'top-bottom'
+  });
+}
+
+// Load videos shortly before they enter the viewport.
+const videos = document.querySelectorAll("video");
+const loadVideo = (video) => {
+  const sources = video.querySelectorAll("source[data-src]");
+
+  sources.forEach((source) => {
+    source.src = source.dataset.src;
+    delete source.dataset.src;
+  });
+
+  if (sources.length) {
+    video.load();
+  }
+};
+
+if ("IntersectionObserver" in window) {
+  const videoObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadVideo(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "1000px 0px" }
+  );
+
+  videos.forEach((video) => videoObserver.observe(video));
+} else {
+  videos.forEach(loadVideo);
+}
 
   // Handle Play/Pause toggle for all video cards
   document.querySelectorAll(".video-card").forEach(card => {
@@ -13,12 +48,22 @@ AOS.init({
 
     button.addEventListener("click", () => {
       if (video.paused) {
-        video.play();
-        button.textContent = "⏸"; // Pause symbol
+        loadVideo(video);
+        video.play().catch((error) => {
+          if (error.name !== "AbortError") {
+            console.error("Unable to play project video.", error);
+          }
+        });
       } else {
         video.pause();
-        button.textContent = "▶"; // Play symbol
       }
+    });
+
+    video.addEventListener("play", () => {
+      button.textContent = "⏸";
+    });
+    video.addEventListener("pause", () => {
+      button.textContent = "▶";
     });
   });
 
@@ -44,11 +89,6 @@ document.querySelectorAll('a, button, input, textarea, label').forEach(el => {
   el.addEventListener('mouseleave', () => {
     cursor.style.transform = 'translate(-50%,-50%) scale(1)';
   });
-});
-
-// ===== CTA scroll to About on click =====
-document.getElementById('cta-check').addEventListener('click', () => {
-  document.querySelector('#about').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 // ===== Typewriter effect =====
@@ -139,5 +179,3 @@ document.addEventListener('keydown', (e) => {
     document.body.classList.add('show-focus');
   }
 })
-
-

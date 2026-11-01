@@ -30,14 +30,11 @@
     <header class="hero">
       <div class="hero-inner" data-aos="fade-up" data-aos-duration="700">
         <h1 class="intro-title">Welcome To My Portfolio</h1>
-        <p class="intro-sub">Elegant, performant UI — Web solution, deliver real business impact</p>
-        <a href="#cv-section">
-          <div class="hero-ctas">
-            <button id="cta-check" class="cta-btn" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-              Click here to check more about me
-            </button>
-          </div>
-        </a>
+        <p class="intro-sub">Elegant, performant UI. Web solutions that deliver real business impact.</p>
+        <div class="hero-ctas">
+          <a id="cta-check" class="cta-btn" href="#cv-section" data-aos="zoom-in" data-aos-duration="600"
+            data-aos-delay="100">Click here to check more about me</a>
+        </div>
       </div>
 
       <!-- Animated profile card -->
@@ -80,7 +77,7 @@
           </div>
         </div>
         <div class="type-right blue-box">
-          <p>Quick, creative and detail-oriented — crafting pixel-perfect UIs & delightful flows.</p>
+          <p>Quick, creative and detail-oriented, crafting pixel-perfect UIs & delightful flows.</p>
         </div>
       </div>
     </section>
@@ -127,7 +124,7 @@
       <h2 class="aims-title">MY AIMS</h2>
 
       <p class="aims-text">
-        My aim is to use technology as a problem-solving tool — not just to write code,
+        My aim is to use technology as a problem-solving tool, not just to write code,
         but to <strong>reduce stress, simplify ideas, and transform concepts into powerful digital experiences</strong>.
         I am always ready to take on individual challenges, understand real user needs,
         and turn complex thoughts into clean, functional, and engaging websites.
@@ -135,7 +132,7 @@
 
       <p class="aims-text">
         I believe every idea deserves visibility. That is why I focus on building products
-        that are fast, visually appealing, user-friendly, and scalable —
+        that are fast, visually appealing, user-friendly, and scalable,
         helping individuals and brands grow with confidence in the digital space.
       </p>
 
@@ -163,13 +160,11 @@
 
     <!-- Video Content -->
     <div class="aims-video">
-      <video autoplay muted loop playsinline>
-        <source src="Media/morep.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline preload="none">
+        <source data-src="Media/morep.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-</div>
-
   </div>
 </section>
 
@@ -180,10 +175,11 @@
 
 
     <!-- Projects -->
-    <section id="projects" class="projects-section" data-aos="fade-up" data-aos-duration="500">
+    <section id="projects-intro" class="projects-section" data-aos="fade-up" data-aos-duration="500">
       <div class="container">
         <h2>Selected Projects</h2>
         <p class="muted">A collection of UI & front-end practice projects.</p>
+      </div>
     </section>
 
     <!-- Projects Section -->
@@ -247,10 +243,10 @@
         <!-- Card 1 -->
         <div class="video-card">
           <div class="video-container">
-            <video autoplay muted loop playsinline>
-              <source src="Media/Untitled video - Made with Clipchamp (5).mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="none">
+              <source data-src="Media/Untitled video - Made with Clipchamp (5).mp4" type="video/mp4">
             </video>
-            <button class="video-btn">⏸</button>
+            <button class="video-btn">▶</button>
           </div>
           <div class="video-info">
             <h3>Web Website Template </h3>
@@ -261,10 +257,10 @@
         <!-- Card 2 -->
         <div class="video-card">
           <div class="video-container">
-            <video autoplay muted loop playsinline>
-              <source src="Media/Untitled video - Made with Clipchamp (6).mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="none">
+              <source data-src="Media/Untitled video - Made with Clipchamp (6).mp4" type="video/mp4">
             </video>
-            <button class="video-btn">⏸</button>
+            <button class="video-btn">▶</button>
           </div>
           <div class="video-info">
             <h3>Entrepreneur Website</h3>
@@ -275,10 +271,10 @@
         <!-- Card 3 -->
         <div class="video-card">
           <div class="video-container">
-            <video autoplay muted loop playsinline>
-              <source src="Media/Video Project 11111.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline preload="none">
+              <source data-src="Media/Video Project 11111.mp4" type="video/mp4">
             </video>
-            <button class="video-btn">⏸</button>
+            <button class="video-btn">▶</button>
           </div>
           <div class="video-info">
             <h3>E-learning Website</h3>
@@ -301,12 +297,12 @@
 
           <details>
             <summary>Do you work with remote teams?</summary>
-            <p>Yes — I collaborate remotely. I'm comfortable with asynchronous tools and regular standups.</p>
+            <p>Yes, I collaborate remotely. I'm comfortable with asynchronous tools and regular standups.</p>
           </details>
 
           <details>
             <summary>Do you accept freelance projects?</summary>
-            <p>Yes — depending on scope. Contact me with project details and timeline.</p>
+            <p>Yes, depending on scope. Contact me with project details and timeline.</p>
           </details>
         </div>
       </div>
@@ -316,7 +312,7 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <h2>Contact Me</h2>
-        <p class="muted">Leave a message — it will be sent to me and i will reply ASAP</p>
+        <p class="muted">Leave a message, it will be sent to me and i will reply ASAP</p>
         <form id="contact-form" class="contact-grid" action="https://formspree.io/f/xwpngwbl" method="POST">
           <label>
             <span>Your name</span>
@@ -361,11 +357,20 @@
       <h2 class="showcase-title">Some Part of My UI/UX Projects</h2>
       <div class="showcase-marquee">
         <div class="showcase-track">
-          <img src="Media/post 1.png" alt="UI/UX project 1">
-          <img src="Media/post subject page.png" alt="UI/UX project 2">
-          <img src="Media/post schedule page.png" alt="UI/UX project 3">
-          <img src="Media/post2.png" alt="UI/UX project 4">
-          <img src="Media/post5.png" alt="UI/UX project 5">
+          <div class="showcase-group">
+            <img src="Media/post 1.png" alt="UI/UX project 1">
+            <img src="Media/post subject page.png" alt="UI/UX project 2">
+            <img src="Media/post schedule page.png" alt="UI/UX project 3">
+            <img src="Media/post2.png" alt="UI/UX project 4">
+            <img src="Media/post5.png" alt="UI/UX project 5">
+          </div>
+          <div class="showcase-group" aria-hidden="true">
+            <img src="Media/post 1.png" alt="">
+            <img src="Media/post subject page.png" alt="">
+            <img src="Media/post schedule page.png" alt="">
+            <img src="Media/post2.png" alt="">
+            <img src="Media/post5.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -416,12 +421,12 @@
 
         <div>
           <h5>Contact</h5>
-          <p class="muted">Email: <a href="#">ttg.thetechgee@gmail.com</a></p>
+          <p class="muted">Email: <a href="mailto:ttg.thetechgee@gmail.com">ttg.thetechgee@gmail.com</a></p>
         </div>
       </div>
 
       <div class="copyright">
-        <small>© <span id="year"></span> The Tech Gee — Built with care.</small>
+        <small>© <span id="year"></span> The Tech Gee. Built with care.</small>
       </div>
     </footer>
 
