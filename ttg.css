@@ -195,11 +195,21 @@ video {
 .resume-preview {
   margin-top: 20px;
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .resume-preview img {
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 360px;
   display: block;
-  width: min(100%, 760px);
+  width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 12px;
