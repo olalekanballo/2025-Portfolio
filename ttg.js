@@ -140,7 +140,7 @@ const resumePreview = document.getElementById("resume-preview-box");
 if (resumeBtn && resumePreview) {
   resumeBtn.addEventListener("click", () => {
     if (resumePreview.style.display === "none") {
-      resumePreview.style.display = "flex";
+      resumePreview.style.display = "block";
       resumeBtn.textContent = "Hide My Resume";
     } else {
       resumePreview.style.display = "none";
