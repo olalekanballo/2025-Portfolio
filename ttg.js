@@ -133,25 +133,6 @@ function typeLoop() {
 }
 typeLoop();
 
-// ===== Handle CV button differently for mobile =====
-const cvBtn = document.getElementById("cv-btn");
-
-if (cvBtn) {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    // Force download on mobile
-    cvBtn.removeAttribute("target");  // no new tab
-    cvBtn.setAttribute("download", "Bello_Abdullahi_Olalekan_CV.pdf");
-    cvBtn.textContent = "Download My CV"; // optional text change
-  } else {
-    // Desktop keeps preview mode
-    cvBtn.setAttribute("target", "_blank");
-    cvBtn.removeAttribute("download");
-  }
-}
-
-
 // ===== Toggle Resume Preview =====
 const resumeBtn = document.getElementById("resume-toggle-btn");
 const resumePreview = document.getElementById("resume-preview-box");
